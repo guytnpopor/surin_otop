@@ -21,9 +21,9 @@ const ProductDetail = () => {
       <div className="min-h-screen bg-background">
         <Header />
         <div className="container mx-auto px-4 py-32 text-center">
-          <h1 className="font-display text-2xl font-bold mb-4">Product Not Found</h1>
+          <h1 className="font-display text-2xl font-bold mb-4">ไม่พบผลิตภัณฑ์</h1>
           <Button asChild>
-            <Link to="/products">Back to Products</Link>
+            <Link to="/products">กลับไปที่ผลิตภัณฑ์</Link>
           </Button>
         </div>
         <Footer />
@@ -44,7 +44,7 @@ const ProductDetail = () => {
               className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Products
+              กลับไปที่ผลิตภัณฑ์
             </Link>
           </div>
 
@@ -81,15 +81,15 @@ const ProductDetail = () => {
               <div className="prose prose-sm text-muted-foreground mb-8">
                 <p>{product.description}</p>
                 <p className="mt-4">
-                  This authentic OTOP product represents the finest craftsmanship 
-                  from Surin Province. Each piece is carefully handmade by skilled 
-                  artisans, ensuring quality and authenticity.
+                  ผลิตภัณฑ์ OTOP แท้ชิ้นนี้แสดงถึงฝีมือช่างชั้นเยี่ยม
+                  จากจังหวัดสุรินทร์ แต่ละชิ้นทำด้วยมืออย่างพิถีพิถันโดยช่างฝีมือผู้เชี่ยวชาญ
+                  เพื่อให้มั่นใจในคุณภาพและความแท้จริง
                 </p>
               </div>
 
               <div className="flex gap-4 mb-8">
                 <Button variant="gold" size="xl" className="flex-1">
-                  Contact Seller
+                  ติดต่อผู้ขาย
                 </Button>
                 <Button variant="outline" size="icon" className="h-14 w-14">
                   <Heart className="h-6 w-6" />
@@ -104,7 +104,7 @@ const ProductDetail = () => {
                 <Card variant="feature" className="mt-8">
                   <CardContent className="p-6">
                     <h3 className="font-display text-lg font-semibold mb-2">
-                      Made by {community.name}
+                      ทำโดย {community.name}
                     </h3>
                     {community.nameThai && (
                       <p className="text-sm text-muted-foreground mb-4">
@@ -127,7 +127,7 @@ const ProductDetail = () => {
                     </div>
                     <Button variant="outline" size="sm" className="mt-4" asChild>
                       <Link to={`/communities/${community.id}`}>
-                        View Community
+                        ดูชุมชน
                       </Link>
                     </Button>
                   </CardContent>
@@ -143,7 +143,7 @@ const ProductDetail = () => {
         <section className="py-16 bg-secondary/30">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-display text-2xl font-bold text-foreground mb-8">
-              Related Products
+              สินค้าที่เกี่ยวข้อง
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedProducts.map((product) => (

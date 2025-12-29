@@ -43,10 +43,10 @@ const Products = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-2xl mx-auto animate-fade-in-up">
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our Products
+              ผลิตภัณฑ์ของเรา
             </h1>
             <p className="text-muted-foreground text-lg">
-              Discover authentic OTOP products handcrafted by Surin's finest artisans
+              ค้นพบผลิตภัณฑ์ OTOP แท้ๆ ที่ผลิตด้วยมืออย่างประณีตโดยช่างฝีมือชั้นเยี่ยมของสุรินทร์
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Products = () => {
                   <SelectValue placeholder="Category" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Categories</SelectItem>
+                  <SelectItem value="all">ทุกหมวดหมู่</SelectItem>
                   {categories.map((cat) => (
                     <SelectItem key={cat.id} value={cat.name}>
                       {cat.name}
@@ -87,7 +87,7 @@ const Products = () => {
                 onClick={() => setShowFilters(!showFilters)}
               >
                 <Filter className="h-5 w-5 mr-2" />
-                Filters
+                ตัวกรอง
                 <ChevronDown
                   className={`h-4 w-4 ml-2 transition-transform ${
                     showFilters ? "rotate-180" : ""
@@ -100,7 +100,7 @@ const Products = () => {
           {/* Mobile Filters */}
           {showFilters && (
             <div className="lg:hidden bg-card rounded-xl p-6 mb-8 border border-border animate-fade-in">
-              <h3 className="font-medium mb-4">Price Range</h3>
+              <h3 className="font-medium mb-4">ช่วงราคา</h3>
               <Slider
                 value={priceRange}
                 onValueChange={setPriceRange}
@@ -119,10 +119,10 @@ const Products = () => {
             {/* Desktop Sidebar Filters */}
             <aside className="hidden lg:block w-64 shrink-0">
               <div className="sticky top-28 bg-card rounded-xl p-6 border border-border">
-                <h3 className="font-display text-lg font-semibold mb-6">Filters</h3>
+                <h3 className="font-display text-lg font-semibold mb-6">ตัวกรอง</h3>
 
                 <div className="mb-6">
-                  <h4 className="font-medium mb-3 text-sm">Category</h4>
+                  <h4 className="font-medium mb-3 text-sm">หมวดหมู่</h4>
                   <div className="space-y-2">
                     <button
                       onClick={() => setSelectedCategory("all")}
@@ -132,7 +132,7 @@ const Products = () => {
                           : "hover:bg-secondary"
                       }`}
                     >
-                      All Categories
+                      ทุกหมวดหมู่
                     </button>
                     {categories.map((cat) => (
                       <button
@@ -151,7 +151,7 @@ const Products = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-medium mb-3 text-sm">Price Range</h4>
+                  <h4 className="font-medium mb-3 text-sm">ช่วงราคา</h4>
                   <Slider
                     value={priceRange}
                     onValueChange={setPriceRange}
@@ -171,7 +171,7 @@ const Products = () => {
             <div className="flex-1">
               <div className="flex justify-between items-center mb-6">
                 <p className="text-muted-foreground">
-                  Showing {filteredProducts.length} products
+                  กำลังแสดง {filteredProducts.length} สินค้า
                 </p>
               </div>
 
@@ -193,7 +193,7 @@ const Products = () => {
               ) : (
                 <div className="text-center py-20">
                   <p className="text-muted-foreground text-lg">
-                    No products found matching your criteria.
+                    ไม่พบสินค้าที่ตรงกับเกณฑ์ที่คุณกำหนด
                   </p>
                   <Button
                     variant="outline"
@@ -204,7 +204,7 @@ const Products = () => {
                       setPriceRange([0, 5000]);
                     }}
                   >
-                    Clear Filters
+                    ล้างตัวกรอง
                   </Button>
                 </div>
               )}

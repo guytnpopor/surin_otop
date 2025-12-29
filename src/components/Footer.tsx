@@ -19,8 +19,8 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-earth-foreground/70 text-sm leading-relaxed">
-              Discover the finest handcrafted products from Surin Province, Thailand. 
-              Each piece tells a story of tradition, craftsmanship, and cultural heritage.
+              ค้นพบผลิตภัณฑ์หัตถกรรมชั้นเลิศจากจังหวัดสุรินทร์ ประเทศไทย
+              แต่ละชิ้นงานบอกเล่าเรื่องราวของประเพณี งานฝีมือ และมรดกทางวัฒนธรรม
             </p>
             <div className="flex gap-3 mt-6">
               <a

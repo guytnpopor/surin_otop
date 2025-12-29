@@ -41,19 +41,17 @@ const Index = () => {
               <span className="block text-primary mt-2">Thai Craft, Modern Touch</span>
             </h1>
             <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-xl">
-              Experience the rich cultural heritage of Surin Province through our 
-              authentic handcrafted products. From exquisite silk to traditional crafts, 
-              each piece tells a unique story.
+              "สุรินทร์ถิ่นช้างใหญ่ ผ้าไหมงาม ประคำสวย ร่ำรวยปราสาท ผักกาดหวาน ข้าวสารหอม งามพร้อมวัฒนธรรม"
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="gold" size="xl" asChild>
                 <Link to="/products">
-                  Explore Products
+                  สำรวจผลิตภัณฑ์
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Link>
               </Button>
               <Button variant="outline-light" size="xl" asChild>
-                <Link to="/about">Our Story</Link>
+                <Link to="/about">เรื่องราวของเรา</Link>
               </Button>
             </div>
           </div>
@@ -68,14 +66,13 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12 animate-fade-in-up">
             <span className="text-sm font-medium text-primary uppercase tracking-wider">
-              Browse by Category
+              เรียกดูตามหมวดหมู่
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
-              Explore Our Collections
+              สำรวจคอลเลกชันของเรา
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Discover authentic OTOP products across four unique categories, 
-              each showcasing the exceptional craftsmanship of Surin artisans.
+              ค้นพบผลิตภัณฑ์ OTOP แท้ๆ ในสี่หมวดหมู่ที่ไม่เหมือนใครซึ่งแต่ละหมวดหมู่แสดงให้เห็นถึงฝีมืออันยอดเยี่ยมของช่างฝีมือชาวสุรินทร์
             </p>
           </div>
           
@@ -109,12 +106,12 @@ const Index = () => {
                 Featured Products
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
-                Best of Surin OTOP
+                สินค้าเด่น
               </h2>
             </div>
             <Button variant="outline" asChild>
               <Link to="/products">
-                View All Products
+                สินค้าทั้งหมด
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Link>
             </Button>
@@ -140,40 +137,38 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <span className="text-sm font-medium text-primary uppercase tracking-wider">
-                About Surin OTOP
+                เกี่ยวกับ Surin OTOP
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
-                Preserving Heritage, <br />Embracing Innovation
+                การอนุรักษ์มรดก <br />การยอมรับนวัตกรรม
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Surin Province, located in the heart of Thailand's Isan region, is renowned 
-                for its rich cultural heritage, majestic elephants, and exceptional 
-                craftsmanship. Our OTOP (One Tambon One Product) initiative brings together 
-                local artisans and communities to showcase their unique skills.
+                จังหวัดสุรินทร์ ตั้งอยู่ภาคอีสานใต้ของประเทศไทย มีชื่อเสียง
+                ในด้านมรดกทางวัฒนธรรมอันร่ำรวย ช้างที่สง่างาม และงานฝีมืออันยอดเยี่ยม
+                โครงการ OTOP (หนึ่งตำบล หนึ่งผลิตภัณฑ์) ของเรานำช่างฝีมือและชุมชนท้องถิ่นมารวมกันเพื่อแสดงทักษะอันเป็นเอกลักษณ์ของพวกเขา
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Each product represents generations of knowledge, from the intricate 
-                patterns of mudmee silk to the delicate art of traditional weaving. 
-                When you choose Surin OTOP, you're not just buying a product – you're 
-                supporting communities and preserving cultural traditions.
+                แต่ละผลิตภัณฑ์แสดงถึงความรู้ที่สืบทอดกันมาหลายรุ่น ตั้งแต่ลวดลายอันซับซ้อนของผ้าไหมมัดหมี่ 
+                ไปจนถึงศิลปะการทอผ้าแบบดั้งเดิมอันประณีต เมื่อคุณเลือก Surin OTOP คุณไม่ได้เพียงแค่ซื้อสินค้า 
+                แต่คุณกำลังสนับสนุนชุมชนและอนุรักษ์ประเพณีทางวัฒนธรรม
               </p>
               <div className="flex flex-wrap gap-8">
                 <div>
                   <span className="block text-3xl font-display font-bold text-primary">50+</span>
-                  <span className="text-sm text-muted-foreground">Communities</span>
+                  <span className="text-sm text-muted-foreground">ชุมชน</span>
                 </div>
                 <div>
                   <span className="block text-3xl font-display font-bold text-primary">500+</span>
-                  <span className="text-sm text-muted-foreground">Products</span>
+                  <span className="text-sm text-muted-foreground">สินค้า</span>
                 </div>
                 <div>
                   <span className="block text-3xl font-display font-bold text-primary">200+</span>
-                  <span className="text-sm text-muted-foreground">Years of Heritage</span>
+                  <span className="text-sm text-muted-foreground">ปีแห่งมรดก</span>
                 </div>
               </div>
               <Button variant="earth" size="lg" className="mt-8" asChild>
                 <Link to="/about">
-                  Learn More About Us
+                  เรียนรู้เพิ่มเติมเกี่ยวกับเรา
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Link>
               </Button>
@@ -199,15 +194,15 @@ const Index = () => {
       <section className="py-20 bg-accent">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
-            Ready to Explore Authentic Thai Crafts?
+            พร้อมที่จะสำรวจงานหัตถกรรมไทยแท้ๆ แล้วหรือยัง?
           </h2>
           <p className="text-accent-foreground/80 mb-8 max-w-2xl mx-auto">
-            Browse our complete collection of OTOP products and discover the perfect piece 
-            that resonates with your appreciation for Thai culture and craftsmanship.
+            เลือกชมคอลเลกชันสินค้า OTOP ทั้งหมดของเรา และค้นพบชิ้นงานที่สมบูรณ์แบบ
+            ที่สะท้อนถึงความชื่นชอบของคุณที่มีต่อวัฒนธรรมและงานฝีมือไทย
           </p>
           <Button variant="gold" size="xl" asChild>
             <Link to="/products">
-              Browse All Products
+              เลือกดูผลิตภัณฑ์ทั้งหมด
               <ArrowRight className="h-5 w-5 ml-2" />
             </Link>
           </Button>

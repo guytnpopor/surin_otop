@@ -72,26 +72,26 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <span className="text-sm font-medium text-primary uppercase tracking-wider">
-                About Us
+                เกี่ยวกับเรา
               </span>
               <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-2 mb-6">
-                The Story of <span className="text-primary">Surin OTOP</span>
+                เรื่องราวของ <span className="text-primary">Surin OTOP</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Nestled in the heart of Thailand's Isan region, Surin Province is 
-                a land where tradition meets artistry. Our OTOP initiative celebrates 
-                this heritage by connecting skilled artisans with discerning customers 
-                worldwide.
+                จังหวัดสุรินทร์ตั้งอยู่ภาคอีสานใต้ของประเทศไทย เป็น
+                ดินแดนที่ประเพณีมาบรรจบกับศิลปะ โครงการ OTOP ของเราเฉลิมฉลอง
+                มรดกนี้โดยการเชื่อมโยงช่างฝีมือผู้เชี่ยวชาญกับลูกค้าผู้มีรสนิยม
+                ทั่วโลก
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                From the intricate patterns of mudmee silk to the delicate craftsmanship 
-                of handwoven baskets, each product tells a story of dedication, skill, 
-                and cultural pride. We believe in fair trade, sustainable practices, 
-                and preserving the traditions that make Surin unique.
+                จากลวดลายอันซับซ้อนของผ้าไหมมัดหมี่ไปจนถึงฝีมือประณีตของตะกร้าสานด้วยมือ
+                แต่ละผลิตภัณฑ์ล้วนบอกเล่าเรื่องราวของความทุ่มเท ทักษะ
+                และความภาคภูมิใจทางวัฒนธรรม เราเชื่อมั่นในการค้าที่เป็นธรรม การปฏิบัติที่ยั่งยืน
+                และการอนุรักษ์ประเพณีที่ทำให้สุรินทร์มีเอกลักษณ์เฉพาะตัว
               </p>
               <Button variant="gold" size="lg" asChild>
                 <Link to="/products">
-                  Explore Our Products
+                  สำรวจผลิตภัณฑ์ของเรา
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Link>
               </Button>
@@ -114,10 +114,10 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-medium text-primary uppercase tracking-wider">
-              Our Values
+              ค่านิยมของเรา
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
-              What We Stand For
+              สิ่งที่เรายืนหยัดเพื่อ
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -153,10 +153,10 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-medium text-primary uppercase tracking-wider">
-              Our Journey
+              การเดินทางของเรา
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
-              A Legacy of Excellence
+              มรดกแห่งความเป็นเลิศ
             </h2>
           </div>
           <div className="max-w-3xl mx-auto">
@@ -193,18 +193,17 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Surin: Land of Elephants
+                สุรินทร์ดินแดนแห่งช้าง
               </h2>
               <p className="text-earth-foreground/80 leading-relaxed mb-6">
-                Surin Province is world-renowned as the "Elephant Kingdom" of Thailand. 
-                This connection to these majestic creatures is reflected in our cultural 
-                identity and many of our OTOP products.
+                จังหวัดสุรินทร์มีชื่อเสียงระดับโลกในฐานะ "อาณาจักรช้าง" ของประเทศไทย
+                ความเชื่อมโยงกับสัตว์ที่สง่างามเหล่านี้สะท้อนให้เห็นในเอกลักษณ์ทางวัฒนธรรมของเรา
+                และผลิตภัณฑ์ OTOP หลายอย่างของเรา
               </p>
               <p className="text-earth-foreground/80 leading-relaxed mb-8">
-                The annual Surin Elephant Round-up Festival draws visitors from around 
-                the globe, celebrating the deep bond between the people of Surin and 
-                their beloved elephants. This cultural significance is woven into the 
-                fabric of our local crafts.
+                เทศกาลต้อนช้างสุรินทร์ประจำปีดึงดูดผู้มาเยือนจากทั่วทุกมุมโลก 
+                เพื่อเฉลิมฉลองความผูกพันอันลึกซึ้งระหว่างชาวสุรินทร์และช้างอันเป็นที่รัก 
+                ความสำคัญทางวัฒนธรรมนี้ถูกถักทอเข้าไปในงานฝีมือท้องถิ่นของเรา
               </p>
               <div className="flex gap-8">
                 <div>
@@ -240,18 +239,17 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ready to Discover Surin's Treasures?
+            พร้อมค้นพบขุมทรัพย์แห่งสุรินทร์แล้วหรือยัง?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Explore our collection of authentic OTOP products and support the 
-            talented artisan communities of Surin Province.
+            สำรวจคอลเล็กชั่นผลิตภัณฑ์ OTOP แท้ของเรา และสนับสนุนชุมชนช่างฝีมือมากความสามารถของจังหวัดสุรินทร์
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button variant="gold" size="xl" asChild>
-              <Link to="/products">Browse Products</Link>
+              <Link to="/products">เรียกดูผลิตภัณฑ์</Link>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <Link to="/communities">Meet Our Communities</Link>
+              <Link to="/communities">พบกับชุมชนของเรา</Link>
             </Button>
           </div>
         </div>

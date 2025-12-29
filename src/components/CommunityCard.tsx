@@ -29,7 +29,7 @@ const CommunityCard = ({
 }: CommunityCardProps) => {
   return (
     <Card variant="elevated" className={cn("group overflow-hidden", className)}>
-      <Link to={`/communities/${id}`} className="block">
+      {/* <Link to={`/communities/${id}`} className="block"> */}
         <div className="relative h-48 overflow-hidden">
           <img
             src={image}
@@ -68,7 +68,7 @@ const CommunityCard = ({
             </div>
           )}
         </div>
-      </Link>
+      {/* </Link> */}
     </Card>
   );
 };
