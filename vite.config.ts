@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Surin_OTOP",
+  base: "/surin_otop.github.io./"
 }));
