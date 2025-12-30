@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X, Search, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Logo from "@/assets/logo.jpg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,7 +22,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <span className="font-display text-lg font-bold text-primary-foreground">S</span>
+            <img src={Logo} alt="logo" />
           </div>
           <div className="hidden sm:block">
             <span className="font-display text-xl font-semibold text-foreground">
